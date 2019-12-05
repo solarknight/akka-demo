@@ -14,13 +14,22 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+
+    <akka.version>2.6.0</akka.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-actor-typed_2.13</artifactId>
-      <version>2.6.0</version>
+      <version>${akka.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-actor-testkit-typed_2.13</artifactId>
+      <version>${akka.version}</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
@@ -52,7 +61,7 @@
               <configuration>
                 <transformers>
                   <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                    <mainClass>com.github.solarknight.ActorHierarchyExperiments</mainClass>
+                    <mainClass>com.github.solarknight.demo.ActorHierarchyExperiments</mainClass>
                   </transformer>
                   <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                     <resource>reference.conf</resource>

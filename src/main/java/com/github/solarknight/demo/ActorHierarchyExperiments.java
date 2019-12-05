@@ -1,4 +1,4 @@
-package com.github.solarknight;
+package com.github.solarknight.demo;
 
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.ActorSystem;
@@ -61,7 +61,7 @@ public class ActorHierarchyExperiments {
 
       System.out.println("First: " + firstRef);
       firstRef.tell("printit");
-      return Behaviors.same();
+      return Behaviors.stopped();
     }
   }
 }
