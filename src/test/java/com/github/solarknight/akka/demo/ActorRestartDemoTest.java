@@ -1,8 +1,8 @@
-package com.github.solarknight.demo;
+package com.github.solarknight.akka.demo;
 
 import akka.actor.testkit.typed.javadsl.TestKitJunitResource;
 import akka.actor.typed.ActorRef;
-import com.github.solarknight.demo.ActorRestartDemo.SupervisingActor;
+import com.github.solarknight.akka.demo.ActorRestartDemo.SupervisingActor;
 import org.junit.ClassRule;
 import org.junit.Test;
 

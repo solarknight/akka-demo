@@ -1,4 +1,4 @@
-package com.github.solarknight;
+package com.github.solarknight.akka;
 
 /**
  * @author solarknight created on Dec 03, 2019

@@ -1,4 +1,4 @@
-package com.github.solarknight.demo;
+package com.github.solarknight.akka.demo;
 
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Behavior;
