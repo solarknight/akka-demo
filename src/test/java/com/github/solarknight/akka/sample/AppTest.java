@@ -1,4 +1,4 @@
-package com.github.solarknight.akka;
+package com.github.solarknight.akka.sample;
 
 import static org.junit.Assert.assertTrue;
 
