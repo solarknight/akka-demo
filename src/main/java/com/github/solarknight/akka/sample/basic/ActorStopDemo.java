@@ -1,4 +1,4 @@
-package com.github.solarknight.akka.sample.demo;
+package com.github.solarknight.akka.sample.basic;
 
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Behavior;
@@ -9,7 +9,7 @@ import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 
 /**
- * @author peiheng.zph created on Dec 04, 2019
+ * @author solarknight created on Dec 04, 2019
  * @version 1.0
  */
 public class ActorStopDemo {
@@ -55,9 +55,7 @@ public class ActorStopDemo {
 
     @Override
     public Receive<String> createReceive() {
-      return newReceiveBuilder()
-          .onSignal(PostStop.class, signal -> onPostStop())
-          .build();
+      return newReceiveBuilder().onSignal(PostStop.class, signal -> onPostStop()).build();
     }
 
     private Behavior<String> onPostStop() {

@@ -1,4 +1,4 @@
-package com.github.solarknight.akka.sample.demo;
+package com.github.solarknight.akka.sample.basic;
 
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.ActorSystem;
@@ -9,7 +9,7 @@ import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 
 /**
- * @author peiheng.zph created on Dec 03, 2019
+ * @author solarknight created on Dec 03, 2019
  * @version 1.0
  */
 public class ActorHierarchyExperiments {
@@ -65,4 +65,3 @@ public class ActorHierarchyExperiments {
     }
   }
 }
-
