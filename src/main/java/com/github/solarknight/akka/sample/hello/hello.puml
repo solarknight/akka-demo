@@ -1,0 +1,18 @@
+@startuml
+title Hello sequences
+
+actor HelloWorldBot
+actor HelloWorld
+
+autonumber
+== First Greet ==
+HelloWorldBot -> HelloWorld : Greet
+HelloWorld --> HelloWorldBot : Greeted
+== Second Greet ==
+HelloWorldBot -> HelloWorld : Greet
+HelloWorld --> HelloWorldBot : Greeted
+== Third Greet ==
+HelloWorldBot -> HelloWorld : Greet
+HelloWorld --> HelloWorldBot : Greeted
+note right: Last greet
+@enduml

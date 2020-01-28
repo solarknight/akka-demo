@@ -1,0 +1,9 @@
+@startuml
+(Main) -r-> (ChatRoom) : 1. GetSession
+(ChatRoom) --> (Session) : 2. spawn
+(ChatRoom) --> (Gabbler) : 3. Session Granted
+(Gabbler) -> (Session)  : 4. PostMessage
+(Session) --> (ChatRoom) : 5. PublishSessionMessage
+(ChatRoom) ---> (Session) : 6. NotifyClient
+(Session) -> (Gabbler)   : 7. message
+@enduml

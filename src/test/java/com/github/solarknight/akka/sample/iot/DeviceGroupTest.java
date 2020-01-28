@@ -6,8 +6,6 @@ import static org.junit.Assert.assertNotEquals;
 import akka.actor.testkit.typed.javadsl.TestKitJunitResource;
 import akka.actor.testkit.typed.javadsl.TestProbe;
 import akka.actor.typed.ActorRef;
-import com.github.solarknight.akka.sample.iot.Device;
-import com.github.solarknight.akka.sample.iot.DeviceGroup;
 import com.github.solarknight.akka.sample.iot.DeviceGroup.Command;
 import com.github.solarknight.akka.sample.iot.DeviceManager.DeviceRegistered;
 import com.github.solarknight.akka.sample.iot.DeviceManager.ReplyDeviceList;
