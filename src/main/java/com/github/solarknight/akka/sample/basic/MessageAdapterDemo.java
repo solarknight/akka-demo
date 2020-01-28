@@ -15,6 +15,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Adapted-response pattern<br>
+ *
+ * @see <a
+ *     href="https://doc.akka.io/docs/akka/current/typed/interaction-patterns.html#adapted-response">interaction-patterns</a>
  * @author peiheng.zph created on Jan 28, 2020
  * @version 1.0
  */
