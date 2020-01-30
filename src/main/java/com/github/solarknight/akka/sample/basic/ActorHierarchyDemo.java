@@ -12,7 +12,7 @@ import akka.actor.typed.javadsl.Receive;
  * @author solarknight created on Dec 03, 2019
  * @version 1.0
  */
-public class ActorHierarchyExperiments {
+public class ActorHierarchyDemo {
 
   public static void main(String[] args) {
     ActorRef<String> testSystem = ActorSystem.create(Main.create(), "testSystem");
