@@ -15,6 +15,10 @@ import org.junit.Test;
  */
 public class ActorMailboxDemoTest {
 
+  /**
+   * By default the ActorTestKit loads configuration from application-test.conf<br>
+   * If you prefer to use application.conf you can pass that as the configuration parameter
+   */
   @ClassRule
   public static final TestKitJunitResource testKit = new TestKitJunitResource(ConfigFactory.load());
 
